@@ -1,0 +1,521 @@
+{
+  "php": {
+    "kind": "sequence",
+    "concept": "Server-side request lifecycle",
+    "nodes": [
+      "HTTP request",
+      "PHP runtime",
+      "Template",
+      "HTML response"
+    ],
+    "hint": "Request lifecycle"
+  },
+  "javascript": {
+    "kind": "eventloop",
+    "concept": "Tasks return to the event loop",
+    "nodes": [
+      "Call stack",
+      "Web APIs",
+      "Task queue",
+      "Event loop"
+    ],
+    "hint": "Event loop"
+  },
+  "html5": {
+    "kind": "tree",
+    "concept": "Markup becomes a document tree",
+    "nodes": [
+      "Document",
+      "head",
+      "body",
+      "title",
+      "main",
+      "footer"
+    ],
+    "hint": "Document tree"
+  },
+  "css": {
+    "kind": "cascade",
+    "concept": "Selectors resolve into computed styles",
+    "nodes": [
+      "Selectors",
+      "Specificity",
+      "Computed style",
+      "Layout"
+    ],
+    "hint": "Style cascade"
+  },
+  "mysql": {
+    "kind": "query",
+    "concept": "An indexed read follows a query plan",
+    "nodes": [
+      "SQL query",
+      "Optimizer",
+      "B-tree index",
+      "Matching rows"
+    ],
+    "hint": "Indexed reads"
+  },
+  "jquery": {
+    "kind": "selector",
+    "concept": "Select elements, handle events, update the DOM",
+    "nodes": [
+      "CSS selector",
+      "Matched nodes",
+      "Event handler",
+      "DOM update"
+    ],
+    "hint": "DOM events"
+  },
+  "laravel": {
+    "kind": "sequence",
+    "concept": "A request crosses application boundaries",
+    "nodes": [
+      "Route",
+      "Middleware",
+      "Controller",
+      "Response"
+    ],
+    "hint": "Request pipeline"
+  },
+  "bootstrap": {
+    "kind": "responsive",
+    "concept": "One grid adapts to different viewports",
+    "nodes": [
+      "12-column grid",
+      "Desktop layout",
+      "Tablet layout",
+      "Mobile stack"
+    ],
+    "hint": "Responsive grid"
+  },
+  "react": {
+    "kind": "reconcile",
+    "concept": "State changes reconcile the UI tree",
+    "nodes": [
+      "State update",
+      "Render",
+      "Reconcile",
+      "DOM commit"
+    ],
+    "hint": "State to DOM"
+  },
+  "typescript": {
+    "kind": "compile",
+    "concept": "Types are checked before JavaScript runs",
+    "nodes": [
+      "TypeScript",
+      "Type checker",
+      "Diagnostics",
+      "JavaScript"
+    ],
+    "hint": "Type checking"
+  },
+  "nodedotjs": {
+    "kind": "eventloop",
+    "concept": "Async I/O returns callbacks to the event loop",
+    "nodes": [
+      "Request",
+      "Async I/O",
+      "Callback queue",
+      "Event loop"
+    ],
+    "hint": "Async I/O"
+  },
+  "nextdotjs": {
+    "kind": "fan",
+    "concept": "An example route mixes server and client work",
+    "nodes": [
+      "Route request",
+      "Server rendering",
+      "Client component",
+      "Rendered page"
+    ],
+    "hint": "Server and client rendering"
+  },
+  "graphql": {
+    "kind": "resolver",
+    "concept": "A query resolves only its requested fields",
+    "nodes": [
+      "Query",
+      "User resolver",
+      "Posts resolver",
+      "Response"
+    ],
+    "hint": "Field resolvers"
+  },
+  "redis": {
+    "kind": "cache",
+    "concept": "A cache hit returns early; a miss fills the cache",
+    "nodes": [
+      "Request",
+      "Cache lookup",
+      "Database",
+      "Cached result"
+    ],
+    "hint": "Cache hit and miss"
+  },
+  "nginx": {
+    "kind": "balance",
+    "concept": "A reverse proxy distributes requests",
+    "nodes": [
+      "Client",
+      "Reverse proxy",
+      "Upstream A",
+      "Upstream B"
+    ],
+    "hint": "Load balancing"
+  },
+  "mongodb": {
+    "kind": "documents",
+    "concept": "A document query filters indexed collections",
+    "nodes": [
+      "Document query",
+      "Collection",
+      "Index lookup",
+      "Documents"
+    ],
+    "hint": "Document queries"
+  },
+  "postgresql": {
+    "kind": "query",
+    "concept": "The planner chooses how to read the rows",
+    "nodes": [
+      "SQL statement",
+      "Query planner",
+      "Index / scan",
+      "Result rows"
+    ],
+    "hint": "Query planning"
+  },
+  "amazonwebservices": {
+    "kind": "cloud",
+    "concept": "Example web workload with separate compute and storage",
+    "nodes": [
+      "HTTPS request",
+      "Load balancer",
+      "Compute pool",
+      "Object storage"
+    ],
+    "hint": "Web architecture"
+  },
+  "googlecloud": {
+    "kind": "cloud",
+    "concept": "Example event-driven workload on cloud services",
+    "nodes": [
+      "Event",
+      "Message queue",
+      "Worker",
+      "Data store"
+    ],
+    "hint": "Event-driven services"
+  },
+  "docker": {
+    "kind": "containers",
+    "concept": "Build layers once; run isolated containers",
+    "nodes": [
+      "Dockerfile",
+      "Image layers",
+      "Container A",
+      "Container B"
+    ],
+    "hint": "Image to containers"
+  },
+  "kubernetes": {
+    "kind": "controller",
+    "concept": "A controller reconciles actual and desired state",
+    "nodes": [
+      "Desired state",
+      "Controller",
+      "Actual pods",
+      "Observe state"
+    ],
+    "hint": "State reconciliation"
+  },
+  "githubactions": {
+    "kind": "pipeline",
+    "concept": "An event triggers jobs and promotes an artifact",
+    "nodes": [
+      "Push / PR",
+      "Test job",
+      "Build artifact",
+      "Deploy job"
+    ],
+    "hint": "CI/CD jobs"
+  },
+  "git": {
+    "kind": "branch",
+    "concept": "Feature work diverges and merges back",
+    "nodes": [
+      "Base commit",
+      "Feature commits",
+      "Review",
+      "Merge commit"
+    ],
+    "hint": "Branch and merge"
+  },
+  "gitlab": {
+    "kind": "pipeline",
+    "concept": "A delivery pipeline publishes and deploys an image",
+    "nodes": [
+      "Commit",
+      "CI pipeline",
+      "Image registry",
+      "Deploy"
+    ],
+    "hint": "Build and deploy"
+  },
+  "terraform": {
+    "kind": "infrastructure",
+    "concept": "A plan applies a resource graph and updates state",
+    "nodes": [
+      "Configuration",
+      "Plan",
+      "Apply resources",
+      "State"
+    ],
+    "hint": "Plan and state"
+  },
+  "ansible": {
+    "kind": "inventory",
+    "concept": "A playbook converges hosts toward a declared state",
+    "nodes": [
+      "Inventory",
+      "Playbook",
+      "Host A",
+      "Host B"
+    ],
+    "hint": "Host convergence"
+  },
+  "linux": {
+    "kind": "kernel",
+    "concept": "System calls cross the user/kernel boundary",
+    "nodes": [
+      "User process",
+      "System call",
+      "Kernel",
+      "Device I/O"
+    ],
+    "hint": "User to kernel"
+  },
+  "prometheus": {
+    "kind": "metrics",
+    "concept": "Pull scrapes become time series and alert rules",
+    "nodes": [
+      "Targets",
+      "Scrape",
+      "Time series",
+      "Alert rule"
+    ],
+    "hint": "Scrape and alert"
+  },
+  "grafana": {
+    "kind": "dashboard",
+    "concept": "A query turns data into a time-series panel",
+    "nodes": [
+      "Data source",
+      "Query",
+      "Time series",
+      "Dashboard"
+    ],
+    "hint": "Query to chart"
+  },
+  "python": {
+    "kind": "sequence",
+    "concept": "Python connects parsing, transformation, and output",
+    "nodes": [
+      "Read inputs",
+      "Transform",
+      "Validate",
+      "Write output"
+    ],
+    "hint": "Data transformation"
+  },
+  "apacheairflow": {
+    "kind": "dag",
+    "concept": "Dependencies schedule parallel tasks and a join",
+    "nodes": [
+      "Schedule",
+      "Task A",
+      "Task B",
+      "Join task"
+    ],
+    "hint": "Task dependencies"
+  },
+  "apachespark": {
+    "kind": "partitions",
+    "concept": "Partitioned tasks execute and combine results",
+    "nodes": [
+      "Dataset",
+      "Partition A",
+      "Partition B",
+      "Aggregation"
+    ],
+    "hint": "Parallel partitions"
+  },
+  "apachekafka": {
+    "kind": "broker",
+    "concept": "Partitioned event logs feed consumers with offsets",
+    "nodes": [
+      "Producer",
+      "Topic / P0",
+      "Topic / P1",
+      "Consumer group"
+    ],
+    "hint": "Partitioned event logs"
+  },
+  "pandas": {
+    "kind": "dataframe",
+    "concept": "A DataFrame is filtered, grouped, and aggregated",
+    "nodes": [
+      "DataFrame",
+      "Filter rows",
+      "Group keys",
+      "Aggregate"
+    ],
+    "hint": "Filter and aggregate"
+  },
+  "dbt": {
+    "kind": "lineage",
+    "concept": "SQL models form a dependency graph with tests",
+    "nodes": [
+      "Raw source",
+      "Staging model",
+      "Data mart",
+      "Tests"
+    ],
+    "hint": "Model lineage"
+  },
+  "snowflake": {
+    "kind": "warehouse",
+    "concept": "Compute reads storage and returns a query result",
+    "nodes": [
+      "SQL query",
+      "Warehouse",
+      "Storage",
+      "Query result"
+    ],
+    "hint": "Compute and storage"
+  },
+  "databricks": {
+    "kind": "medallion",
+    "concept": "An example medallion pipeline refines lakehouse data",
+    "nodes": [
+      "Bronze",
+      "Silver",
+      "Gold",
+      "Analytics / ML"
+    ],
+    "hint": "Medallion pipeline"
+  },
+  "pytorch": {
+    "kind": "training",
+    "concept": "Gradients flow backward before the optimizer step",
+    "nodes": [
+      "Forward pass",
+      "Loss",
+      "Backward",
+      "Optimizer"
+    ],
+    "hint": "Autograd and optimizer"
+  },
+  "tensorflow": {
+    "kind": "training",
+    "concept": "Batches train a graph and produce a serving model",
+    "nodes": [
+      "Dataset",
+      "Training graph",
+      "Update weights",
+      "Saved model"
+    ],
+    "hint": "Train and serve"
+  },
+  "scikitlearn": {
+    "kind": "evaluate",
+    "concept": "Holdout data stays separate from fitting",
+    "nodes": [
+      "Train / test",
+      "Fit on train",
+      "Predict test",
+      "Score"
+    ],
+    "hint": "Fit and evaluate"
+  },
+  "huggingface": {
+    "kind": "modelhub",
+    "concept": "A model repository supplies tokenizer and weights",
+    "nodes": [
+      "Model repo",
+      "Tokenizer",
+      "Model weights",
+      "Inference"
+    ],
+    "hint": "Models and tokenizers"
+  },
+  "langchain": {
+    "kind": "agent",
+    "concept": "An orchestration loop selects tools and uses their results",
+    "nodes": [
+      "Input / context",
+      "Model",
+      "Tool execution",
+      "Observation"
+    ],
+    "hint": "Tools and observations"
+  },
+  "ollama": {
+    "kind": "localmodel",
+    "concept": "Local inference loads a model without a remote model hop",
+    "nodes": [
+      "Model pull",
+      "Local weights",
+      "Local runtime",
+      "Response stream"
+    ],
+    "hint": "Local model runtime"
+  },
+  "openai": {
+    "kind": "agent",
+    "concept": "Example application: model requests a tool, then continues",
+    "nodes": [
+      "Prompt + context",
+      "Model response",
+      "Tool execution",
+      "Tool result"
+    ],
+    "hint": "Tool-calling loop"
+  },
+  "anthropic": {
+    "kind": "agent",
+    "concept": "Example tool-use loop with application validation",
+    "nodes": [
+      "Context",
+      "Model tool use",
+      "Run tool",
+      "Validate result"
+    ],
+    "hint": "Tool use and validation"
+  },
+  "googlegemini": {
+    "kind": "multimodal",
+    "concept": "Text, image, and audio inputs meet a model",
+    "nodes": [
+      "Text",
+      "Image",
+      "Audio",
+      "Model response"
+    ],
+    "hint": "Multimodal inputs"
+  },
+  "mistralai": {
+    "kind": "retrieval",
+    "concept": "Retrieved context grounds a streamed model response",
+    "nodes": [
+      "Question",
+      "Retrieved context",
+      "Prompt / model",
+      "Token stream"
+    ],
+    "hint": "Retrieval and generation"
+  }
+}

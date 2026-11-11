@@ -1,0 +1,297 @@
+[
+  {
+    "n": "01",
+    "date": "BEFORE 2017",
+    "title": "The foundations.",
+    "subtitle": "Software engineering / PHP / JavaScript",
+    "color": "#7056bb",
+    "logos": [
+      [
+        "php",
+        "PHP",
+        "#777BB4"
+      ],
+      [
+        "javascript",
+        "JavaScript",
+        "#b38b00"
+      ],
+      [
+        "html5",
+        "HTML5",
+        "#E34F26"
+      ],
+      [
+        "css",
+        "CSS",
+        "#663399"
+      ],
+      [
+        "mysql",
+        "MySQL",
+        "#4479A1"
+      ],
+      [
+        "jquery",
+        "jQuery",
+        "#0769AD"
+      ],
+      [
+        "laravel",
+        "Laravel",
+        "#ed4438"
+      ],
+      [
+        "bootstrap",
+        "Bootstrap",
+        "#7952B3"
+      ]
+    ],
+    "effect": "CODE / COMPOSE / SHIP"
+  },
+  {
+    "n": "02",
+    "date": "2017 - 2022",
+    "title": "Connected systems.",
+    "subtitle": "Full-stack / React / cloud / microservices",
+    "color": "#3158ed",
+    "logos": [
+      [
+        "react",
+        "React",
+        "#1688a6"
+      ],
+      [
+        "typescript",
+        "TypeScript",
+        "#3178C6"
+      ],
+      [
+        "nodedotjs",
+        "Node.js",
+        "#4b8839"
+      ],
+      [
+        "nextdotjs",
+        "Next.js",
+        "#151821"
+      ],
+      [
+        "graphql",
+        "GraphQL",
+        "#d82798"
+      ],
+      [
+        "redis",
+        "Redis",
+        "#c0392b"
+      ],
+      [
+        "nginx",
+        "NGINX",
+        "#16843a"
+      ],
+      [
+        "mongodb",
+        "MongoDB",
+        "#338746"
+      ],
+      [
+        "postgresql",
+        "PostgreSQL",
+        "#4169a1"
+      ],
+      [
+        "amazonwebservices",
+        "AWS",
+        "#b46a00"
+      ],
+      [
+        "googlecloud",
+        "Google Cloud",
+        "#4285F4"
+      ]
+    ],
+    "effect": "INTERFACES / SERVICES / CLOUD"
+  },
+  {
+    "n": "03",
+    "date": "2021 - 2024",
+    "title": "Built to keep running.",
+    "subtitle": "DevOps / CI/CD / deployment / cloud operations",
+    "color": "#c04a24",
+    "logos": [
+      [
+        "docker",
+        "Docker",
+        "#2496ED"
+      ],
+      [
+        "kubernetes",
+        "Kubernetes",
+        "#326CE5"
+      ],
+      [
+        "githubactions",
+        "GitHub Actions",
+        "#2088FF"
+      ],
+      [
+        "git",
+        "Git",
+        "#F05032"
+      ],
+      [
+        "gitlab",
+        "GitLab",
+        "#c34c22"
+      ],
+      [
+        "terraform",
+        "Terraform",
+        "#7B42BC"
+      ],
+      [
+        "ansible",
+        "Ansible",
+        "#151821"
+      ],
+      [
+        "linux",
+        "Linux",
+        "#a98100"
+      ],
+      [
+        "prometheus",
+        "Prometheus",
+        "#E6522C"
+      ],
+      [
+        "grafana",
+        "Grafana",
+        "#c86a15"
+      ]
+    ],
+    "effect": "BUILD / TEST / DEPLOY / OBSERVE"
+  },
+  {
+    "n": "04",
+    "date": "2023 - 2025",
+    "title": "Data, in motion.",
+    "subtitle": "Data engineering / ETL / ELT / orchestration",
+    "color": "#097e72",
+    "logos": [
+      [
+        "python",
+        "Python",
+        "#3776AB"
+      ],
+      [
+        "apacheairflow",
+        "Airflow",
+        "#017CEE"
+      ],
+      [
+        "apachespark",
+        "Spark",
+        "#cb6818"
+      ],
+      [
+        "apachekafka",
+        "Kafka",
+        "#151821"
+      ],
+      [
+        "pandas",
+        "pandas",
+        "#150458"
+      ],
+      [
+        "dbt",
+        "dbt",
+        "#c55a42"
+      ],
+      [
+        "snowflake",
+        "Snowflake",
+        "#2686af"
+      ],
+      [
+        "databricks",
+        "Databricks",
+        "#e84931"
+      ],
+      [
+        "postgresql",
+        "PostgreSQL",
+        "#4169a1"
+      ]
+    ],
+    "effect": "EXTRACT / TRANSFORM / DELIVER"
+  },
+  {
+    "n": "05",
+    "date": "2024 - 2026",
+    "title": "Intelligence, applied.",
+    "subtitle": "AI/ML / LLMs / agentic coding / agentic workflows",
+    "color": "#ac376c",
+    "logos": [
+      [
+        "openai",
+        "OpenAI",
+        "#151821"
+      ],
+      [
+        "anthropic",
+        "Anthropic",
+        "#906b55"
+      ],
+      [
+        "googlegemini",
+        "Gemini",
+        "#5279db"
+      ],
+      [
+        "mistralai",
+        "Mistral AI",
+        "#c66a12"
+      ],
+      [
+        "huggingface",
+        "Hugging Face",
+        "#a37a00"
+      ],
+      [
+        "ollama",
+        "Ollama",
+        "#151821"
+      ],
+      [
+        "langchain",
+        "LangChain",
+        "#1C3C3C"
+      ],
+      [
+        "pytorch",
+        "PyTorch",
+        "#d4482f"
+      ],
+      [
+        "tensorflow",
+        "TensorFlow",
+        "#c56b00"
+      ],
+      [
+        "scikitlearn",
+        "scikit-learn",
+        "#c16b1c"
+      ],
+      [
+        "python",
+        "Python",
+        "#3776AB"
+      ]
+    ],
+    "effect": "CONTEXT / REASON / ACT / VERIFY"
+  }
+]
