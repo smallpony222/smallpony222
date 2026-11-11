@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="639" viewBox="0 0 480 639" role="img" aria-labelledby="title desc">
+<title id="title">An engineering approach to agentic workflows</title><desc id="desc">Frame, build, verify, and deliver. Iterate through observation, learning, and refinement.</desc>
+<defs>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#161d22"/><stop offset="1" stop-color="#0c1116"/></linearGradient>
+ <linearGradient id="gold"><stop stop-color="#88734e"/><stop offset=".5" stop-color="#eddbb4"/><stop offset="1" stop-color="#ad9059"/></linearGradient>
+ <radialGradient id="halo"><stop stop-color="#d9bd83" stop-opacity=".12"/><stop offset="1" stop-color="#d9bd83" stop-opacity="0"/></radialGradient>
+</defs>
+<style>
+ text{font-family:Inter,'Segoe UI',Arial,sans-serif}
+ .mono{font-family:'SFMono-Regular',Consolas,monospace;letter-spacing:2px}
+ .signal{stroke-dasharray:12 140;animation:signal 9s linear infinite}
+ .orbit{transform-box:fill-box;transform-origin:center;animation:orbit 40s linear infinite}
+ .breathe{animation:breathe 6s ease-in-out infinite}
+ .logo{animation:logo 7s ease-in-out infinite}
+ .draw{stroke-dasharray:10 16;animation:signal 18s linear infinite}
+ @keyframes signal{to{stroke-dashoffset:-304}}
+ @keyframes orbit{to{transform:rotate(360deg)}}
+ @keyframes breathe{0%,100%{opacity:.5}50%{opacity:1}}
+ @keyframes logo{0%,100%{opacity:.78;transform:translateY(0)}50%{opacity:1;transform:translateY(-1.5px)}}
+ @media(prefers-reduced-motion:reduce){*{animation:none!important}}
+
+</style>
+<rect x=".5" y=".5" width="479" height="638" rx="22" fill="url(#bg)" stroke="#30373b"/>
+<text x="24" y="43" fill="#d9bd83" font-size="11" font-weight="400" class="mono">02 / HOW I BUILD</text><text x="24" y="88" fill="#f2eee5" font-size="31" font-weight="600" >Intent → impact.</text><text x="24" y="122" fill="#a5abae" font-size="15" font-weight="400" >Applied AI, grounded in engineering.</text><rect x="24" y="157" width="432" height="86" rx="13" fill="#192126" stroke="#3b474a"/><text x="40" y="187" fill="#d9bd83" font-size="12" font-weight="400" >01</text><text x="85" y="191" fill="#f2eee5" font-size="20" font-weight="600" letter-spacing="1">FRAME</text><text x="85" y="218" fill="#a5abae" font-size="15" font-weight="400" >Context &amp; constraints</text><path d="M240 243v21" stroke="#8bd2c6" class="breathe"/><rect x="24" y="264" width="432" height="86" rx="13" fill="#192126" stroke="#3b474a"/><text x="40" y="294" fill="#d9bd83" font-size="12" font-weight="400" >02</text><text x="85" y="298" fill="#f2eee5" font-size="20" font-weight="600" letter-spacing="1">BUILD</text><text x="85" y="325" fill="#a5abae" font-size="15" font-weight="400" >Code &amp; connected tools</text><path d="M240 350v21" stroke="#8bd2c6" class="breathe"/><rect x="24" y="371" width="432" height="86" rx="13" fill="#192126" stroke="#3b474a"/><text x="40" y="401" fill="#d9bd83" font-size="12" font-weight="400" >03</text><text x="85" y="405" fill="#f2eee5" font-size="20" font-weight="600" letter-spacing="1">VERIFY</text><text x="85" y="432" fill="#a5abae" font-size="15" font-weight="400" >Tests &amp; human review</text><path d="M240 457v21" stroke="#8bd2c6" class="breathe"/><rect x="24" y="478" width="432" height="86" rx="13" fill="#192126" stroke="#3b474a"/><text x="40" y="508" fill="#d9bd83" font-size="12" font-weight="400" >04</text><text x="85" y="512" fill="#f2eee5" font-size="20" font-weight="600" letter-spacing="1">DELIVER</text><text x="85" y="539" fill="#a5abae" font-size="15" font-weight="400" >Deploy &amp; observe</text><text x="66" y="610" fill="#8bd2c6" font-size="13" font-weight="400" letter-spacing="2">OBSERVE · LEARN · REFINE</text>
+</svg>
