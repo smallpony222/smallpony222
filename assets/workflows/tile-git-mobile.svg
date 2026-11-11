@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="64" viewBox="0 0 150 64" role="img" aria-labelledby="title desc">
+<title id="title">Git</title><desc id="desc">Git technology mark</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M1 1L7 4L1 7" fill="none" stroke="#828282" stroke-width="1.2"/></marker></defs>
+<style>
+text{font-family:Inter,'Segoe UI',Arial,sans-serif}
+.flow{stroke-dasharray:8 28;animation:flow 4s linear infinite}
+.stage{animation:stage 8s ease-in-out infinite}
+.orbit{transform-box:fill-box;transform-origin:center;animation:orbit 32s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-144}}
+@keyframes stage{0%,20%{stroke-width:3}40%,100%{stroke-width:1.2}}
+@keyframes orbit{to{transform:rotate(360deg)}}
+@keyframes grid{0%,100%{transform:scaleX(1)}50%{transform:scaleX(.58)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<g transform="translate(52 6) scale(1.9166666666666667)" fill="#e64d30"><path d="M13.09 23.549a1.54 1.54 0 0 1-2.18 0L.451 13.089a1.54 1.54 0 0 1 0-2.179l7.191-7.19 2.733 2.733a1.85 1.85 0 0 0 .964 2.326v6.66a1.849 1.849 0 1 0 1.54 0V8.957l2.508 2.508a1.85 1.85 0 1 0 1.09-1.09l-2.634-2.634a1.85 1.85 0 0 0-2.378-2.377L8.73 2.63 10.91.451a1.54 1.54 0 0 1 2.179 0l10.459 10.46a1.54 1.54 0 0 1 0 2.179z"/></g>
+</svg>

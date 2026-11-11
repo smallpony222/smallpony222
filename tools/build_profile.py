@@ -149,6 +149,32 @@ def effect(ch,name,label,color,spec,mobile):
  h+=max(1,len(caption))*26+10
  save(f'{ch["n"]}-{name}{"-mobile" if mobile else ""}.svg',w,h,label+' - '+spec['concept'],spec['concept']+'. '+' -> '.join(spec['nodes'])+'. Illustrative workflow.',header+body)
 
+def compact_effect(ch,name,label,color,spec):
+ # A narrow, readable composition for a gallery cell on a phone.
+ color=balanced(color);width=180;labels=spec['nodes'];count=len(labels)
+ ys=[65+i*107 for i in range(count)]
+ b=''
+ kind=spec['kind'];links=[(i,i+1) for i in range(count-1)]
+ if kind in {'agent','controller','infrastructure','training','eventloop'}:
+  links=[(0,1),(1,2),(2,3),(3,1 if kind in {'agent','controller','infrastructure'} else 0)]
+ if kind in {'fan','resolver','balance','cloud','containers','inventory','dag','partitions','modelhub','warehouse','evaluate','branch','broker'}:links=[(0,1),(0,2),(1,3),(2,3)]
+ if kind=='cache':links=[(0,1),(1,2),(2,3),(3,1),(1,3)]
+ if kind=='multimodal':links=[(0,3),(1,3),(2,3)]
+ if kind=='lineage':links=[(0,1),(1,2),(1,3),(2,3)]
+ if kind=='tree':links=[(0,1),(0,2),(1,3),(2,4),(2,5)]
+ if spec.get('tech')=='tensorflow':links=[(0,1),(1,2),(2,1),(1,3)]
+ for i,(a,z) in enumerate(links):
+  if z==a+1:path=f'M86 {ys[a]+34}V{ys[z]-34}'
+  elif i%2:path=f'M158 {ys[a]}H174V{ys[z]}H158'
+  else:path=f'M14 {ys[a]}H5V{ys[z]}H14'
+  b+=f'<path d="{path}" stroke="{LINE}" fill="none" stroke-width="1.2" marker-end="url(#arrow)"/><path d="{path}" stroke="{color}" fill="none" stroke-width="2.5" class="flow"/>'
+ for i,(y,text) in enumerate(zip(ys,labels)):
+  b+=f'<rect x="14" y="{y-34}" width="144" height="68" rx="10" fill="none" stroke="{color}" class="stage" style="animation-delay:-{i*1.9}s"/>'
+  rows=textwrap.wrap(text,14)
+  for j,row in enumerate(rows):b+=txt(86,y+6+(j-(len(rows)-1)/2)*20,row,16,INK,extra='text-anchor="middle"')
+ h=ys[-1]+63
+ save(f'{ch["n"]}-{name}-mobile.svg',width,h,label+' - '+spec['concept'],spec['concept']+'. Compact stacked layout preserves dependencies and feedback paths.',b)
+
 def picture(file,alt):
  return '<picture>\n<source media="(max-width: 600px)" srcset="./assets/workflows/'+file+'-mobile.svg" />\n<img src="./assets/workflows/'+file+'.svg" width="100%" alt="'+html.escape(alt,quote=True)+'" />\n</picture>'
 
@@ -165,23 +191,50 @@ def cover(mobile):
  b+=txt(26,h-36,'SELECT A LOGO TO EXPLORE ITS WORKFLOW',19,BLUE)
  save('cover-mobile.svg' if mobile else 'cover.svg',w,h,'Small Pony - engineering journey','Always building. Select individual technology logos for their conceptual workflows.',b)
 
+def chapter_art(ch,mobile):
+ w=480 if mobile else 960;h=174 if mobile else 160
+ c=balanced(ch['color'])
+ b=f'<path d="M18 24V{h-24}" stroke="{c}" stroke-width="3"/>'
+ b+=txt(40,47,ch['date'],18,c,700,extra='letter-spacing="2"')
+ b+=txt(38,96,ch['title'],30 if mobile else 39,INK,700,extra='letter-spacing="-1"')
+ b+=txt(w-37,47,ch['n'],22,c,600,extra='text-anchor="end"')
+ subtitles={
+ '01':'Software engineering / PHP / JavaScript',
+ '02':'Full-stack / cloud architecture / microservices',
+ '03':'DevOps / delivery / cloud operations',
+ '04':'Data engineering / ETL / ELT',
+ '05':'AI/ML / LLMs / agentic workflows'}
+ for i,row in enumerate(textwrap.wrap(subtitles[ch['n']],41 if mobile else 80)):
+  b+=txt(40,130+i*23,row,18,INK)
+ save(f'chapter-{ch["n"]}{"-mobile" if mobile else ""}.svg',w,h,ch['date']+' / '+ch['title'],subtitles[ch['n']],b)
+
 def build():
  OUT.mkdir(exist_ok=True)
  cover(False);cover(True)
  readme=picture('cover','Small Pony. Always building. Software, systems, data, and applied AI. Select any technology logo for its own conceptual workflow.')+'\n\n'
  count=0
  for ch in CHAPTERS:
-  readme+=f'<h2>{html.escape(ch["date"])} / {html.escape(ch["title"])}</h2>\n\n'
+  chapter_art(ch,False);chapter_art(ch,True)
+  readme+=picture('chapter-'+ch['n'],ch['date']+' / '+ch['title'])+'\n\n<table width="100%" align="center">\n<tbody>\n'
+  tiles=[]
   for name,label,color in ch['logos']:
    spec=dict(WORKFLOWS[name]);spec['nodes']=list(spec['nodes'])
    if ch['n']=='05' and name=='python':spec={'kind':'eventloop','concept':'Python orchestrates async model and tool calls','hint':'Async model and tool calls','nodes':['Task input','Async model call','Tool coroutine','Collected results']}
    if ch['n']=='04' and name=='postgresql':spec={'kind':'query','concept':'Analytical SQL groups and aggregates rows','hint':'Analytical aggregation','nodes':['Analytical SQL','Partition scan','Aggregate','Result set']}
    spec['tech']=name
    color=balanced(color)
-   save(f'logo-{name}.svg',36,36,label,label+' technology mark',icon(name,2,2,32,color))
+   save(f'tile-{name}.svg',430,64,label,label+' technology mark',icon(name,192,6,46,color))
+   save(f'tile-{name}-mobile.svg',150,64,label,label+' technology mark',icon(name,52,6,46,color))
    effect(ch,name,label,color,spec,False);effect(ch,name,label,color,spec,True)
-   readme+='<details>\n<summary><picture><img src="./assets/workflows/logo-'+name+'.svg" width="30" height="30" alt="'+label+' logo" /></picture> &nbsp; <strong>'+html.escape(label)+'</strong> &nbsp; / &nbsp; '+html.escape(spec['hint'])+'</summary>\n\n'
-   readme+=picture(ch['n']+'-'+name,label+': '+spec['concept'])+'\n\n</details>\n\n';count+=1
+   compact_effect(ch,name,label,color,spec)
+   tile='<td width="50%" align="center" valign="top">\n<details>\n<summary>'+picture('tile-'+name,label+' logo')+'<br /><strong>'+html.escape(label)+'</strong><br /><sub>'+html.escape(spec['hint'])+'</sub></summary>\n\n'
+   tile+=picture(ch['n']+'-'+name,label+': '+spec['concept'])+'\n\n</details>\n</td>\n'
+   tiles.append(tile);count+=1
+  for i in range(0,len(tiles),2):
+   row=tiles[i:i+2]
+   if len(row)==1:row=[row[0].replace('<td width="50%"','<td colspan="2"').replace('width="100%"','width="50%"',1)]
+   readme+='<tr>\n'+''.join(row)+'</tr>\n'
+  readme+='</tbody>\n</table>\n\n'
  (ROOT/'README.md').write_text(readme.rstrip()+'\n',encoding='utf-8')
  print(f'Built {count} independent technology reveals; {len(WORKFLOWS)} distinct logos. Transparent, theme-neutral assets.')
 if __name__=='__main__':build()

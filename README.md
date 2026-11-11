@@ -3,10 +3,20 @@
 <img src="./assets/workflows/cover.svg" width="100%" alt="Small Pony. Always building. Software, systems, data, and applied AI. Select any technology logo for its own conceptual workflow." />
 </picture>
 
-<h2>BEFORE 2017 / The foundations.</h2>
+<picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/chapter-01-mobile.svg" />
+<img src="./assets/workflows/chapter-01.svg" width="100%" alt="BEFORE 2017 / The foundations." />
+</picture>
 
+<table width="100%" align="center">
+<tbody>
+<tr>
+<td width="50%" align="center" valign="top">
 <details>
-<summary><picture><img src="./assets/workflows/logo-php.svg" width="30" height="30" alt="PHP logo" /></picture> &nbsp; <strong>PHP</strong> &nbsp; / &nbsp; Request lifecycle</summary>
+<summary><picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/tile-php-mobile.svg" />
+<img src="./assets/workflows/tile-php.svg" width="100%" alt="PHP logo" />
+</picture><br /><strong>PHP</strong><br /><sub>Request lifecycle</sub></summary>
 
 <picture>
 <source media="(max-width: 600px)" srcset="./assets/workflows/01-php-mobile.svg" />
@@ -14,9 +24,13 @@
 </picture>
 
 </details>
-
+</td>
+<td width="50%" align="center" valign="top">
 <details>
-<summary><picture><img src="./assets/workflows/logo-javascript.svg" width="30" height="30" alt="JavaScript logo" /></picture> &nbsp; <strong>JavaScript</strong> &nbsp; / &nbsp; Event loop</summary>
+<summary><picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/tile-javascript-mobile.svg" />
+<img src="./assets/workflows/tile-javascript.svg" width="100%" alt="JavaScript logo" />
+</picture><br /><strong>JavaScript</strong><br /><sub>Event loop</sub></summary>
 
 <picture>
 <source media="(max-width: 600px)" srcset="./assets/workflows/01-javascript-mobile.svg" />
@@ -24,9 +38,15 @@
 </picture>
 
 </details>
-
+</td>
+</tr>
+<tr>
+<td width="50%" align="center" valign="top">
 <details>
-<summary><picture><img src="./assets/workflows/logo-html5.svg" width="30" height="30" alt="HTML5 logo" /></picture> &nbsp; <strong>HTML5</strong> &nbsp; / &nbsp; Document tree</summary>
+<summary><picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/tile-html5-mobile.svg" />
+<img src="./assets/workflows/tile-html5.svg" width="100%" alt="HTML5 logo" />
+</picture><br /><strong>HTML5</strong><br /><sub>Document tree</sub></summary>
 
 <picture>
 <source media="(max-width: 600px)" srcset="./assets/workflows/01-html5-mobile.svg" />
@@ -34,9 +54,13 @@
 </picture>
 
 </details>
-
+</td>
+<td width="50%" align="center" valign="top">
 <details>
-<summary><picture><img src="./assets/workflows/logo-css.svg" width="30" height="30" alt="CSS logo" /></picture> &nbsp; <strong>CSS</strong> &nbsp; / &nbsp; Style cascade</summary>
+<summary><picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/tile-css-mobile.svg" />
+<img src="./assets/workflows/tile-css.svg" width="100%" alt="CSS logo" />
+</picture><br /><strong>CSS</strong><br /><sub>Style cascade</sub></summary>
 
 <picture>
 <source media="(max-width: 600px)" srcset="./assets/workflows/01-css-mobile.svg" />
@@ -44,9 +68,15 @@
 </picture>
 
 </details>
-
+</td>
+</tr>
+<tr>
+<td width="50%" align="center" valign="top">
 <details>
-<summary><picture><img src="./assets/workflows/logo-mysql.svg" width="30" height="30" alt="MySQL logo" /></picture> &nbsp; <strong>MySQL</strong> &nbsp; / &nbsp; Indexed reads</summary>
+<summary><picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/tile-mysql-mobile.svg" />
+<img src="./assets/workflows/tile-mysql.svg" width="100%" alt="MySQL logo" />
+</picture><br /><strong>MySQL</strong><br /><sub>Indexed reads</sub></summary>
 
 <picture>
 <source media="(max-width: 600px)" srcset="./assets/workflows/01-mysql-mobile.svg" />
@@ -54,9 +84,13 @@
 </picture>
 
 </details>
-
+</td>
+<td width="50%" align="center" valign="top">
 <details>
-<summary><picture><img src="./assets/workflows/logo-jquery.svg" width="30" height="30" alt="jQuery logo" /></picture> &nbsp; <strong>jQuery</strong> &nbsp; / &nbsp; DOM events</summary>
+<summary><picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/tile-jquery-mobile.svg" />
+<img src="./assets/workflows/tile-jquery.svg" width="100%" alt="jQuery logo" />
+</picture><br /><strong>jQuery</strong><br /><sub>DOM events</sub></summary>
 
 <picture>
 <source media="(max-width: 600px)" srcset="./assets/workflows/01-jquery-mobile.svg" />
@@ -64,9 +98,15 @@
 </picture>
 
 </details>
-
+</td>
+</tr>
+<tr>
+<td width="50%" align="center" valign="top">
 <details>
-<summary><picture><img src="./assets/workflows/logo-laravel.svg" width="30" height="30" alt="Laravel logo" /></picture> &nbsp; <strong>Laravel</strong> &nbsp; / &nbsp; Request pipeline</summary>
+<summary><picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/tile-laravel-mobile.svg" />
+<img src="./assets/workflows/tile-laravel.svg" width="100%" alt="Laravel logo" />
+</picture><br /><strong>Laravel</strong><br /><sub>Request pipeline</sub></summary>
 
 <picture>
 <source media="(max-width: 600px)" srcset="./assets/workflows/01-laravel-mobile.svg" />
@@ -74,9 +114,13 @@
 </picture>
 
 </details>
-
+</td>
+<td width="50%" align="center" valign="top">
 <details>
-<summary><picture><img src="./assets/workflows/logo-bootstrap.svg" width="30" height="30" alt="Bootstrap logo" /></picture> &nbsp; <strong>Bootstrap</strong> &nbsp; / &nbsp; Responsive grid</summary>
+<summary><picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/tile-bootstrap-mobile.svg" />
+<img src="./assets/workflows/tile-bootstrap.svg" width="100%" alt="Bootstrap logo" />
+</picture><br /><strong>Bootstrap</strong><br /><sub>Responsive grid</sub></summary>
 
 <picture>
 <source media="(max-width: 600px)" srcset="./assets/workflows/01-bootstrap-mobile.svg" />
@@ -84,11 +128,25 @@
 </picture>
 
 </details>
+</td>
+</tr>
+</tbody>
+</table>
 
-<h2>2017 - 2022 / Connected systems.</h2>
+<picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/chapter-02-mobile.svg" />
+<img src="./assets/workflows/chapter-02.svg" width="100%" alt="2017 - 2022 / Connected systems." />
+</picture>
 
+<table width="100%" align="center">
+<tbody>
+<tr>
+<td width="50%" align="center" valign="top">
 <details>
-<summary><picture><img src="./assets/workflows/logo-react.svg" width="30" height="30" alt="React logo" /></picture> &nbsp; <strong>React</strong> &nbsp; / &nbsp; State to DOM</summary>
+<summary><picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/tile-react-mobile.svg" />
+<img src="./assets/workflows/tile-react.svg" width="100%" alt="React logo" />
+</picture><br /><strong>React</strong><br /><sub>State to DOM</sub></summary>
 
 <picture>
 <source media="(max-width: 600px)" srcset="./assets/workflows/02-react-mobile.svg" />
@@ -96,9 +154,13 @@
 </picture>
 
 </details>
-
+</td>
+<td width="50%" align="center" valign="top">
 <details>
-<summary><picture><img src="./assets/workflows/logo-typescript.svg" width="30" height="30" alt="TypeScript logo" /></picture> &nbsp; <strong>TypeScript</strong> &nbsp; / &nbsp; Type checking</summary>
+<summary><picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/tile-typescript-mobile.svg" />
+<img src="./assets/workflows/tile-typescript.svg" width="100%" alt="TypeScript logo" />
+</picture><br /><strong>TypeScript</strong><br /><sub>Type checking</sub></summary>
 
 <picture>
 <source media="(max-width: 600px)" srcset="./assets/workflows/02-typescript-mobile.svg" />
@@ -106,9 +168,15 @@
 </picture>
 
 </details>
-
+</td>
+</tr>
+<tr>
+<td width="50%" align="center" valign="top">
 <details>
-<summary><picture><img src="./assets/workflows/logo-nodedotjs.svg" width="30" height="30" alt="Node.js logo" /></picture> &nbsp; <strong>Node.js</strong> &nbsp; / &nbsp; Async I/O</summary>
+<summary><picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/tile-nodedotjs-mobile.svg" />
+<img src="./assets/workflows/tile-nodedotjs.svg" width="100%" alt="Node.js logo" />
+</picture><br /><strong>Node.js</strong><br /><sub>Async I/O</sub></summary>
 
 <picture>
 <source media="(max-width: 600px)" srcset="./assets/workflows/02-nodedotjs-mobile.svg" />
@@ -116,9 +184,13 @@
 </picture>
 
 </details>
-
+</td>
+<td width="50%" align="center" valign="top">
 <details>
-<summary><picture><img src="./assets/workflows/logo-nextdotjs.svg" width="30" height="30" alt="Next.js logo" /></picture> &nbsp; <strong>Next.js</strong> &nbsp; / &nbsp; Server and client rendering</summary>
+<summary><picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/tile-nextdotjs-mobile.svg" />
+<img src="./assets/workflows/tile-nextdotjs.svg" width="100%" alt="Next.js logo" />
+</picture><br /><strong>Next.js</strong><br /><sub>Server and client rendering</sub></summary>
 
 <picture>
 <source media="(max-width: 600px)" srcset="./assets/workflows/02-nextdotjs-mobile.svg" />
@@ -126,9 +198,15 @@
 </picture>
 
 </details>
-
+</td>
+</tr>
+<tr>
+<td width="50%" align="center" valign="top">
 <details>
-<summary><picture><img src="./assets/workflows/logo-graphql.svg" width="30" height="30" alt="GraphQL logo" /></picture> &nbsp; <strong>GraphQL</strong> &nbsp; / &nbsp; Field resolvers</summary>
+<summary><picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/tile-graphql-mobile.svg" />
+<img src="./assets/workflows/tile-graphql.svg" width="100%" alt="GraphQL logo" />
+</picture><br /><strong>GraphQL</strong><br /><sub>Field resolvers</sub></summary>
 
 <picture>
 <source media="(max-width: 600px)" srcset="./assets/workflows/02-graphql-mobile.svg" />
@@ -136,9 +214,13 @@
 </picture>
 
 </details>
-
+</td>
+<td width="50%" align="center" valign="top">
 <details>
-<summary><picture><img src="./assets/workflows/logo-redis.svg" width="30" height="30" alt="Redis logo" /></picture> &nbsp; <strong>Redis</strong> &nbsp; / &nbsp; Cache hit and miss</summary>
+<summary><picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/tile-redis-mobile.svg" />
+<img src="./assets/workflows/tile-redis.svg" width="100%" alt="Redis logo" />
+</picture><br /><strong>Redis</strong><br /><sub>Cache hit and miss</sub></summary>
 
 <picture>
 <source media="(max-width: 600px)" srcset="./assets/workflows/02-redis-mobile.svg" />
@@ -146,9 +228,15 @@
 </picture>
 
 </details>
-
+</td>
+</tr>
+<tr>
+<td width="50%" align="center" valign="top">
 <details>
-<summary><picture><img src="./assets/workflows/logo-nginx.svg" width="30" height="30" alt="NGINX logo" /></picture> &nbsp; <strong>NGINX</strong> &nbsp; / &nbsp; Load balancing</summary>
+<summary><picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/tile-nginx-mobile.svg" />
+<img src="./assets/workflows/tile-nginx.svg" width="100%" alt="NGINX logo" />
+</picture><br /><strong>NGINX</strong><br /><sub>Load balancing</sub></summary>
 
 <picture>
 <source media="(max-width: 600px)" srcset="./assets/workflows/02-nginx-mobile.svg" />
@@ -156,9 +244,13 @@
 </picture>
 
 </details>
-
+</td>
+<td width="50%" align="center" valign="top">
 <details>
-<summary><picture><img src="./assets/workflows/logo-mongodb.svg" width="30" height="30" alt="MongoDB logo" /></picture> &nbsp; <strong>MongoDB</strong> &nbsp; / &nbsp; Document queries</summary>
+<summary><picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/tile-mongodb-mobile.svg" />
+<img src="./assets/workflows/tile-mongodb.svg" width="100%" alt="MongoDB logo" />
+</picture><br /><strong>MongoDB</strong><br /><sub>Document queries</sub></summary>
 
 <picture>
 <source media="(max-width: 600px)" srcset="./assets/workflows/02-mongodb-mobile.svg" />
@@ -166,9 +258,15 @@
 </picture>
 
 </details>
-
+</td>
+</tr>
+<tr>
+<td width="50%" align="center" valign="top">
 <details>
-<summary><picture><img src="./assets/workflows/logo-postgresql.svg" width="30" height="30" alt="PostgreSQL logo" /></picture> &nbsp; <strong>PostgreSQL</strong> &nbsp; / &nbsp; Query planning</summary>
+<summary><picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/tile-postgresql-mobile.svg" />
+<img src="./assets/workflows/tile-postgresql.svg" width="100%" alt="PostgreSQL logo" />
+</picture><br /><strong>PostgreSQL</strong><br /><sub>Query planning</sub></summary>
 
 <picture>
 <source media="(max-width: 600px)" srcset="./assets/workflows/02-postgresql-mobile.svg" />
@@ -176,9 +274,13 @@
 </picture>
 
 </details>
-
+</td>
+<td width="50%" align="center" valign="top">
 <details>
-<summary><picture><img src="./assets/workflows/logo-amazonwebservices.svg" width="30" height="30" alt="AWS logo" /></picture> &nbsp; <strong>AWS</strong> &nbsp; / &nbsp; Web architecture</summary>
+<summary><picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/tile-amazonwebservices-mobile.svg" />
+<img src="./assets/workflows/tile-amazonwebservices.svg" width="100%" alt="AWS logo" />
+</picture><br /><strong>AWS</strong><br /><sub>Web architecture</sub></summary>
 
 <picture>
 <source media="(max-width: 600px)" srcset="./assets/workflows/02-amazonwebservices-mobile.svg" />
@@ -186,9 +288,15 @@
 </picture>
 
 </details>
-
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center" valign="top">
 <details>
-<summary><picture><img src="./assets/workflows/logo-googlecloud.svg" width="30" height="30" alt="Google Cloud logo" /></picture> &nbsp; <strong>Google Cloud</strong> &nbsp; / &nbsp; Event-driven services</summary>
+<summary><picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/tile-googlecloud-mobile.svg" />
+<img src="./assets/workflows/tile-googlecloud.svg" width="50%" alt="Google Cloud logo" />
+</picture><br /><strong>Google Cloud</strong><br /><sub>Event-driven services</sub></summary>
 
 <picture>
 <source media="(max-width: 600px)" srcset="./assets/workflows/02-googlecloud-mobile.svg" />
@@ -196,11 +304,25 @@
 </picture>
 
 </details>
+</td>
+</tr>
+</tbody>
+</table>
 
-<h2>2021 - 2024 / Built to keep running.</h2>
+<picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/chapter-03-mobile.svg" />
+<img src="./assets/workflows/chapter-03.svg" width="100%" alt="2021 - 2024 / Built to keep running." />
+</picture>
 
+<table width="100%" align="center">
+<tbody>
+<tr>
+<td width="50%" align="center" valign="top">
 <details>
-<summary><picture><img src="./assets/workflows/logo-docker.svg" width="30" height="30" alt="Docker logo" /></picture> &nbsp; <strong>Docker</strong> &nbsp; / &nbsp; Image to containers</summary>
+<summary><picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/tile-docker-mobile.svg" />
+<img src="./assets/workflows/tile-docker.svg" width="100%" alt="Docker logo" />
+</picture><br /><strong>Docker</strong><br /><sub>Image to containers</sub></summary>
 
 <picture>
 <source media="(max-width: 600px)" srcset="./assets/workflows/03-docker-mobile.svg" />
@@ -208,9 +330,13 @@
 </picture>
 
 </details>
-
+</td>
+<td width="50%" align="center" valign="top">
 <details>
-<summary><picture><img src="./assets/workflows/logo-kubernetes.svg" width="30" height="30" alt="Kubernetes logo" /></picture> &nbsp; <strong>Kubernetes</strong> &nbsp; / &nbsp; State reconciliation</summary>
+<summary><picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/tile-kubernetes-mobile.svg" />
+<img src="./assets/workflows/tile-kubernetes.svg" width="100%" alt="Kubernetes logo" />
+</picture><br /><strong>Kubernetes</strong><br /><sub>State reconciliation</sub></summary>
 
 <picture>
 <source media="(max-width: 600px)" srcset="./assets/workflows/03-kubernetes-mobile.svg" />
@@ -218,9 +344,15 @@
 </picture>
 
 </details>
-
+</td>
+</tr>
+<tr>
+<td width="50%" align="center" valign="top">
 <details>
-<summary><picture><img src="./assets/workflows/logo-githubactions.svg" width="30" height="30" alt="GitHub Actions logo" /></picture> &nbsp; <strong>GitHub Actions</strong> &nbsp; / &nbsp; CI/CD jobs</summary>
+<summary><picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/tile-githubactions-mobile.svg" />
+<img src="./assets/workflows/tile-githubactions.svg" width="100%" alt="GitHub Actions logo" />
+</picture><br /><strong>GitHub Actions</strong><br /><sub>CI/CD jobs</sub></summary>
 
 <picture>
 <source media="(max-width: 600px)" srcset="./assets/workflows/03-githubactions-mobile.svg" />
@@ -228,9 +360,13 @@
 </picture>
 
 </details>
-
+</td>
+<td width="50%" align="center" valign="top">
 <details>
-<summary><picture><img src="./assets/workflows/logo-git.svg" width="30" height="30" alt="Git logo" /></picture> &nbsp; <strong>Git</strong> &nbsp; / &nbsp; Branch and merge</summary>
+<summary><picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/tile-git-mobile.svg" />
+<img src="./assets/workflows/tile-git.svg" width="100%" alt="Git logo" />
+</picture><br /><strong>Git</strong><br /><sub>Branch and merge</sub></summary>
 
 <picture>
 <source media="(max-width: 600px)" srcset="./assets/workflows/03-git-mobile.svg" />
@@ -238,9 +374,15 @@
 </picture>
 
 </details>
-
+</td>
+</tr>
+<tr>
+<td width="50%" align="center" valign="top">
 <details>
-<summary><picture><img src="./assets/workflows/logo-gitlab.svg" width="30" height="30" alt="GitLab logo" /></picture> &nbsp; <strong>GitLab</strong> &nbsp; / &nbsp; Build and deploy</summary>
+<summary><picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/tile-gitlab-mobile.svg" />
+<img src="./assets/workflows/tile-gitlab.svg" width="100%" alt="GitLab logo" />
+</picture><br /><strong>GitLab</strong><br /><sub>Build and deploy</sub></summary>
 
 <picture>
 <source media="(max-width: 600px)" srcset="./assets/workflows/03-gitlab-mobile.svg" />
@@ -248,9 +390,13 @@
 </picture>
 
 </details>
-
+</td>
+<td width="50%" align="center" valign="top">
 <details>
-<summary><picture><img src="./assets/workflows/logo-terraform.svg" width="30" height="30" alt="Terraform logo" /></picture> &nbsp; <strong>Terraform</strong> &nbsp; / &nbsp; Plan and state</summary>
+<summary><picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/tile-terraform-mobile.svg" />
+<img src="./assets/workflows/tile-terraform.svg" width="100%" alt="Terraform logo" />
+</picture><br /><strong>Terraform</strong><br /><sub>Plan and state</sub></summary>
 
 <picture>
 <source media="(max-width: 600px)" srcset="./assets/workflows/03-terraform-mobile.svg" />
@@ -258,9 +404,15 @@
 </picture>
 
 </details>
-
+</td>
+</tr>
+<tr>
+<td width="50%" align="center" valign="top">
 <details>
-<summary><picture><img src="./assets/workflows/logo-ansible.svg" width="30" height="30" alt="Ansible logo" /></picture> &nbsp; <strong>Ansible</strong> &nbsp; / &nbsp; Host convergence</summary>
+<summary><picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/tile-ansible-mobile.svg" />
+<img src="./assets/workflows/tile-ansible.svg" width="100%" alt="Ansible logo" />
+</picture><br /><strong>Ansible</strong><br /><sub>Host convergence</sub></summary>
 
 <picture>
 <source media="(max-width: 600px)" srcset="./assets/workflows/03-ansible-mobile.svg" />
@@ -268,9 +420,13 @@
 </picture>
 
 </details>
-
+</td>
+<td width="50%" align="center" valign="top">
 <details>
-<summary><picture><img src="./assets/workflows/logo-linux.svg" width="30" height="30" alt="Linux logo" /></picture> &nbsp; <strong>Linux</strong> &nbsp; / &nbsp; User to kernel</summary>
+<summary><picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/tile-linux-mobile.svg" />
+<img src="./assets/workflows/tile-linux.svg" width="100%" alt="Linux logo" />
+</picture><br /><strong>Linux</strong><br /><sub>User to kernel</sub></summary>
 
 <picture>
 <source media="(max-width: 600px)" srcset="./assets/workflows/03-linux-mobile.svg" />
@@ -278,9 +434,15 @@
 </picture>
 
 </details>
-
+</td>
+</tr>
+<tr>
+<td width="50%" align="center" valign="top">
 <details>
-<summary><picture><img src="./assets/workflows/logo-prometheus.svg" width="30" height="30" alt="Prometheus logo" /></picture> &nbsp; <strong>Prometheus</strong> &nbsp; / &nbsp; Scrape and alert</summary>
+<summary><picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/tile-prometheus-mobile.svg" />
+<img src="./assets/workflows/tile-prometheus.svg" width="100%" alt="Prometheus logo" />
+</picture><br /><strong>Prometheus</strong><br /><sub>Scrape and alert</sub></summary>
 
 <picture>
 <source media="(max-width: 600px)" srcset="./assets/workflows/03-prometheus-mobile.svg" />
@@ -288,9 +450,13 @@
 </picture>
 
 </details>
-
+</td>
+<td width="50%" align="center" valign="top">
 <details>
-<summary><picture><img src="./assets/workflows/logo-grafana.svg" width="30" height="30" alt="Grafana logo" /></picture> &nbsp; <strong>Grafana</strong> &nbsp; / &nbsp; Query to chart</summary>
+<summary><picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/tile-grafana-mobile.svg" />
+<img src="./assets/workflows/tile-grafana.svg" width="100%" alt="Grafana logo" />
+</picture><br /><strong>Grafana</strong><br /><sub>Query to chart</sub></summary>
 
 <picture>
 <source media="(max-width: 600px)" srcset="./assets/workflows/03-grafana-mobile.svg" />
@@ -298,11 +464,25 @@
 </picture>
 
 </details>
+</td>
+</tr>
+</tbody>
+</table>
 
-<h2>2023 - 2025 / Data, in motion.</h2>
+<picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/chapter-04-mobile.svg" />
+<img src="./assets/workflows/chapter-04.svg" width="100%" alt="2023 - 2025 / Data, in motion." />
+</picture>
 
+<table width="100%" align="center">
+<tbody>
+<tr>
+<td width="50%" align="center" valign="top">
 <details>
-<summary><picture><img src="./assets/workflows/logo-python.svg" width="30" height="30" alt="Python logo" /></picture> &nbsp; <strong>Python</strong> &nbsp; / &nbsp; Data transformation</summary>
+<summary><picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/tile-python-mobile.svg" />
+<img src="./assets/workflows/tile-python.svg" width="100%" alt="Python logo" />
+</picture><br /><strong>Python</strong><br /><sub>Data transformation</sub></summary>
 
 <picture>
 <source media="(max-width: 600px)" srcset="./assets/workflows/04-python-mobile.svg" />
@@ -310,9 +490,13 @@
 </picture>
 
 </details>
-
+</td>
+<td width="50%" align="center" valign="top">
 <details>
-<summary><picture><img src="./assets/workflows/logo-apacheairflow.svg" width="30" height="30" alt="Airflow logo" /></picture> &nbsp; <strong>Airflow</strong> &nbsp; / &nbsp; Task dependencies</summary>
+<summary><picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/tile-apacheairflow-mobile.svg" />
+<img src="./assets/workflows/tile-apacheairflow.svg" width="100%" alt="Airflow logo" />
+</picture><br /><strong>Airflow</strong><br /><sub>Task dependencies</sub></summary>
 
 <picture>
 <source media="(max-width: 600px)" srcset="./assets/workflows/04-apacheairflow-mobile.svg" />
@@ -320,9 +504,15 @@
 </picture>
 
 </details>
-
+</td>
+</tr>
+<tr>
+<td width="50%" align="center" valign="top">
 <details>
-<summary><picture><img src="./assets/workflows/logo-apachespark.svg" width="30" height="30" alt="Spark logo" /></picture> &nbsp; <strong>Spark</strong> &nbsp; / &nbsp; Parallel partitions</summary>
+<summary><picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/tile-apachespark-mobile.svg" />
+<img src="./assets/workflows/tile-apachespark.svg" width="100%" alt="Spark logo" />
+</picture><br /><strong>Spark</strong><br /><sub>Parallel partitions</sub></summary>
 
 <picture>
 <source media="(max-width: 600px)" srcset="./assets/workflows/04-apachespark-mobile.svg" />
@@ -330,9 +520,13 @@
 </picture>
 
 </details>
-
+</td>
+<td width="50%" align="center" valign="top">
 <details>
-<summary><picture><img src="./assets/workflows/logo-apachekafka.svg" width="30" height="30" alt="Kafka logo" /></picture> &nbsp; <strong>Kafka</strong> &nbsp; / &nbsp; Partitioned event logs</summary>
+<summary><picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/tile-apachekafka-mobile.svg" />
+<img src="./assets/workflows/tile-apachekafka.svg" width="100%" alt="Kafka logo" />
+</picture><br /><strong>Kafka</strong><br /><sub>Partitioned event logs</sub></summary>
 
 <picture>
 <source media="(max-width: 600px)" srcset="./assets/workflows/04-apachekafka-mobile.svg" />
@@ -340,9 +534,15 @@
 </picture>
 
 </details>
-
+</td>
+</tr>
+<tr>
+<td width="50%" align="center" valign="top">
 <details>
-<summary><picture><img src="./assets/workflows/logo-pandas.svg" width="30" height="30" alt="pandas logo" /></picture> &nbsp; <strong>pandas</strong> &nbsp; / &nbsp; Filter and aggregate</summary>
+<summary><picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/tile-pandas-mobile.svg" />
+<img src="./assets/workflows/tile-pandas.svg" width="100%" alt="pandas logo" />
+</picture><br /><strong>pandas</strong><br /><sub>Filter and aggregate</sub></summary>
 
 <picture>
 <source media="(max-width: 600px)" srcset="./assets/workflows/04-pandas-mobile.svg" />
@@ -350,9 +550,13 @@
 </picture>
 
 </details>
-
+</td>
+<td width="50%" align="center" valign="top">
 <details>
-<summary><picture><img src="./assets/workflows/logo-dbt.svg" width="30" height="30" alt="dbt logo" /></picture> &nbsp; <strong>dbt</strong> &nbsp; / &nbsp; Model lineage</summary>
+<summary><picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/tile-dbt-mobile.svg" />
+<img src="./assets/workflows/tile-dbt.svg" width="100%" alt="dbt logo" />
+</picture><br /><strong>dbt</strong><br /><sub>Model lineage</sub></summary>
 
 <picture>
 <source media="(max-width: 600px)" srcset="./assets/workflows/04-dbt-mobile.svg" />
@@ -360,9 +564,15 @@
 </picture>
 
 </details>
-
+</td>
+</tr>
+<tr>
+<td width="50%" align="center" valign="top">
 <details>
-<summary><picture><img src="./assets/workflows/logo-snowflake.svg" width="30" height="30" alt="Snowflake logo" /></picture> &nbsp; <strong>Snowflake</strong> &nbsp; / &nbsp; Compute and storage</summary>
+<summary><picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/tile-snowflake-mobile.svg" />
+<img src="./assets/workflows/tile-snowflake.svg" width="100%" alt="Snowflake logo" />
+</picture><br /><strong>Snowflake</strong><br /><sub>Compute and storage</sub></summary>
 
 <picture>
 <source media="(max-width: 600px)" srcset="./assets/workflows/04-snowflake-mobile.svg" />
@@ -370,9 +580,13 @@
 </picture>
 
 </details>
-
+</td>
+<td width="50%" align="center" valign="top">
 <details>
-<summary><picture><img src="./assets/workflows/logo-databricks.svg" width="30" height="30" alt="Databricks logo" /></picture> &nbsp; <strong>Databricks</strong> &nbsp; / &nbsp; Medallion pipeline</summary>
+<summary><picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/tile-databricks-mobile.svg" />
+<img src="./assets/workflows/tile-databricks.svg" width="100%" alt="Databricks logo" />
+</picture><br /><strong>Databricks</strong><br /><sub>Medallion pipeline</sub></summary>
 
 <picture>
 <source media="(max-width: 600px)" srcset="./assets/workflows/04-databricks-mobile.svg" />
@@ -380,9 +594,15 @@
 </picture>
 
 </details>
-
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center" valign="top">
 <details>
-<summary><picture><img src="./assets/workflows/logo-postgresql.svg" width="30" height="30" alt="PostgreSQL logo" /></picture> &nbsp; <strong>PostgreSQL</strong> &nbsp; / &nbsp; Analytical aggregation</summary>
+<summary><picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/tile-postgresql-mobile.svg" />
+<img src="./assets/workflows/tile-postgresql.svg" width="50%" alt="PostgreSQL logo" />
+</picture><br /><strong>PostgreSQL</strong><br /><sub>Analytical aggregation</sub></summary>
 
 <picture>
 <source media="(max-width: 600px)" srcset="./assets/workflows/04-postgresql-mobile.svg" />
@@ -390,11 +610,25 @@
 </picture>
 
 </details>
+</td>
+</tr>
+</tbody>
+</table>
 
-<h2>2024 - 2026 / Intelligence, applied.</h2>
+<picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/chapter-05-mobile.svg" />
+<img src="./assets/workflows/chapter-05.svg" width="100%" alt="2024 - 2026 / Intelligence, applied." />
+</picture>
 
+<table width="100%" align="center">
+<tbody>
+<tr>
+<td width="50%" align="center" valign="top">
 <details>
-<summary><picture><img src="./assets/workflows/logo-openai.svg" width="30" height="30" alt="OpenAI logo" /></picture> &nbsp; <strong>OpenAI</strong> &nbsp; / &nbsp; Tool-calling loop</summary>
+<summary><picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/tile-openai-mobile.svg" />
+<img src="./assets/workflows/tile-openai.svg" width="100%" alt="OpenAI logo" />
+</picture><br /><strong>OpenAI</strong><br /><sub>Tool-calling loop</sub></summary>
 
 <picture>
 <source media="(max-width: 600px)" srcset="./assets/workflows/05-openai-mobile.svg" />
@@ -402,9 +636,13 @@
 </picture>
 
 </details>
-
+</td>
+<td width="50%" align="center" valign="top">
 <details>
-<summary><picture><img src="./assets/workflows/logo-anthropic.svg" width="30" height="30" alt="Anthropic logo" /></picture> &nbsp; <strong>Anthropic</strong> &nbsp; / &nbsp; Tool use and validation</summary>
+<summary><picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/tile-anthropic-mobile.svg" />
+<img src="./assets/workflows/tile-anthropic.svg" width="100%" alt="Anthropic logo" />
+</picture><br /><strong>Anthropic</strong><br /><sub>Tool use and validation</sub></summary>
 
 <picture>
 <source media="(max-width: 600px)" srcset="./assets/workflows/05-anthropic-mobile.svg" />
@@ -412,9 +650,15 @@
 </picture>
 
 </details>
-
+</td>
+</tr>
+<tr>
+<td width="50%" align="center" valign="top">
 <details>
-<summary><picture><img src="./assets/workflows/logo-googlegemini.svg" width="30" height="30" alt="Gemini logo" /></picture> &nbsp; <strong>Gemini</strong> &nbsp; / &nbsp; Multimodal inputs</summary>
+<summary><picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/tile-googlegemini-mobile.svg" />
+<img src="./assets/workflows/tile-googlegemini.svg" width="100%" alt="Gemini logo" />
+</picture><br /><strong>Gemini</strong><br /><sub>Multimodal inputs</sub></summary>
 
 <picture>
 <source media="(max-width: 600px)" srcset="./assets/workflows/05-googlegemini-mobile.svg" />
@@ -422,9 +666,13 @@
 </picture>
 
 </details>
-
+</td>
+<td width="50%" align="center" valign="top">
 <details>
-<summary><picture><img src="./assets/workflows/logo-mistralai.svg" width="30" height="30" alt="Mistral AI logo" /></picture> &nbsp; <strong>Mistral AI</strong> &nbsp; / &nbsp; Retrieval and generation</summary>
+<summary><picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/tile-mistralai-mobile.svg" />
+<img src="./assets/workflows/tile-mistralai.svg" width="100%" alt="Mistral AI logo" />
+</picture><br /><strong>Mistral AI</strong><br /><sub>Retrieval and generation</sub></summary>
 
 <picture>
 <source media="(max-width: 600px)" srcset="./assets/workflows/05-mistralai-mobile.svg" />
@@ -432,9 +680,15 @@
 </picture>
 
 </details>
-
+</td>
+</tr>
+<tr>
+<td width="50%" align="center" valign="top">
 <details>
-<summary><picture><img src="./assets/workflows/logo-huggingface.svg" width="30" height="30" alt="Hugging Face logo" /></picture> &nbsp; <strong>Hugging Face</strong> &nbsp; / &nbsp; Models and tokenizers</summary>
+<summary><picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/tile-huggingface-mobile.svg" />
+<img src="./assets/workflows/tile-huggingface.svg" width="100%" alt="Hugging Face logo" />
+</picture><br /><strong>Hugging Face</strong><br /><sub>Models and tokenizers</sub></summary>
 
 <picture>
 <source media="(max-width: 600px)" srcset="./assets/workflows/05-huggingface-mobile.svg" />
@@ -442,9 +696,13 @@
 </picture>
 
 </details>
-
+</td>
+<td width="50%" align="center" valign="top">
 <details>
-<summary><picture><img src="./assets/workflows/logo-ollama.svg" width="30" height="30" alt="Ollama logo" /></picture> &nbsp; <strong>Ollama</strong> &nbsp; / &nbsp; Local model runtime</summary>
+<summary><picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/tile-ollama-mobile.svg" />
+<img src="./assets/workflows/tile-ollama.svg" width="100%" alt="Ollama logo" />
+</picture><br /><strong>Ollama</strong><br /><sub>Local model runtime</sub></summary>
 
 <picture>
 <source media="(max-width: 600px)" srcset="./assets/workflows/05-ollama-mobile.svg" />
@@ -452,9 +710,15 @@
 </picture>
 
 </details>
-
+</td>
+</tr>
+<tr>
+<td width="50%" align="center" valign="top">
 <details>
-<summary><picture><img src="./assets/workflows/logo-langchain.svg" width="30" height="30" alt="LangChain logo" /></picture> &nbsp; <strong>LangChain</strong> &nbsp; / &nbsp; Tools and observations</summary>
+<summary><picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/tile-langchain-mobile.svg" />
+<img src="./assets/workflows/tile-langchain.svg" width="100%" alt="LangChain logo" />
+</picture><br /><strong>LangChain</strong><br /><sub>Tools and observations</sub></summary>
 
 <picture>
 <source media="(max-width: 600px)" srcset="./assets/workflows/05-langchain-mobile.svg" />
@@ -462,9 +726,13 @@
 </picture>
 
 </details>
-
+</td>
+<td width="50%" align="center" valign="top">
 <details>
-<summary><picture><img src="./assets/workflows/logo-pytorch.svg" width="30" height="30" alt="PyTorch logo" /></picture> &nbsp; <strong>PyTorch</strong> &nbsp; / &nbsp; Autograd and optimizer</summary>
+<summary><picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/tile-pytorch-mobile.svg" />
+<img src="./assets/workflows/tile-pytorch.svg" width="100%" alt="PyTorch logo" />
+</picture><br /><strong>PyTorch</strong><br /><sub>Autograd and optimizer</sub></summary>
 
 <picture>
 <source media="(max-width: 600px)" srcset="./assets/workflows/05-pytorch-mobile.svg" />
@@ -472,9 +740,15 @@
 </picture>
 
 </details>
-
+</td>
+</tr>
+<tr>
+<td width="50%" align="center" valign="top">
 <details>
-<summary><picture><img src="./assets/workflows/logo-tensorflow.svg" width="30" height="30" alt="TensorFlow logo" /></picture> &nbsp; <strong>TensorFlow</strong> &nbsp; / &nbsp; Train and serve</summary>
+<summary><picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/tile-tensorflow-mobile.svg" />
+<img src="./assets/workflows/tile-tensorflow.svg" width="100%" alt="TensorFlow logo" />
+</picture><br /><strong>TensorFlow</strong><br /><sub>Train and serve</sub></summary>
 
 <picture>
 <source media="(max-width: 600px)" srcset="./assets/workflows/05-tensorflow-mobile.svg" />
@@ -482,9 +756,13 @@
 </picture>
 
 </details>
-
+</td>
+<td width="50%" align="center" valign="top">
 <details>
-<summary><picture><img src="./assets/workflows/logo-scikitlearn.svg" width="30" height="30" alt="scikit-learn logo" /></picture> &nbsp; <strong>scikit-learn</strong> &nbsp; / &nbsp; Fit and evaluate</summary>
+<summary><picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/tile-scikitlearn-mobile.svg" />
+<img src="./assets/workflows/tile-scikitlearn.svg" width="100%" alt="scikit-learn logo" />
+</picture><br /><strong>scikit-learn</strong><br /><sub>Fit and evaluate</sub></summary>
 
 <picture>
 <source media="(max-width: 600px)" srcset="./assets/workflows/05-scikitlearn-mobile.svg" />
@@ -492,9 +770,15 @@
 </picture>
 
 </details>
-
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center" valign="top">
 <details>
-<summary><picture><img src="./assets/workflows/logo-python.svg" width="30" height="30" alt="Python logo" /></picture> &nbsp; <strong>Python</strong> &nbsp; / &nbsp; Async model and tool calls</summary>
+<summary><picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/tile-python-mobile.svg" />
+<img src="./assets/workflows/tile-python.svg" width="50%" alt="Python logo" />
+</picture><br /><strong>Python</strong><br /><sub>Async model and tool calls</sub></summary>
 
 <picture>
 <source media="(max-width: 600px)" srcset="./assets/workflows/05-python-mobile.svg" />
@@ -502,3 +786,7 @@
 </picture>
 
 </details>
+</td>
+</tr>
+</tbody>
+</table>
