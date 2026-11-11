@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="430" height="64" viewBox="0 0 430 64" role="img" aria-labelledby="title desc">
+<title id="title">TensorFlow</title><desc id="desc">TensorFlow technology mark</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M1 1L7 4L1 7" fill="none" stroke="#828282" stroke-width="1.2"/></marker></defs>
+<style>
+text{font-family:Inter,'Segoe UI',Arial,sans-serif}
+.flow{stroke-dasharray:8 28;animation:flow 4s linear infinite}
+.stage{animation:stage 8s ease-in-out infinite}
+.orbit{transform-box:fill-box;transform-origin:center;animation:orbit 32s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-144}}
+@keyframes stage{0%,20%{stroke-width:3}40%,100%{stroke-width:1.2}}
+@keyframes orbit{to{transform:rotate(360deg)}}
+@keyframes grid{0%,100%{transform:scaleX(1)}50%{transform:scaleX(.58)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<g transform="translate(192 6) scale(1.9166666666666667)" fill="#c56b00"><path d="M1.292 5.856L11.54 0v24l-4.095-2.378V7.603l-6.168 3.564.015-5.31zm21.43 5.311l-.014-5.31L12.46 0v24l4.095-2.378V14.87l3.092 1.788-.018-4.618-3.074-1.756V7.603l6.168 3.564z"/></g>
+</svg>
