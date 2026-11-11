@@ -44,7 +44,7 @@ def svg(name, height, title, description, body, extra_css=''):
  @keyframes breathe{{0%,100%{{opacity:.5}}50%{{opacity:1}}}}
  @keyframes logo{{0%,100%{{opacity:.78;transform:translateY(0)}}50%{{opacity:1;transform:translateY(-1.5px)}}}}
  @media(prefers-reduced-motion:reduce){{*{{animation:none!important}}}}
- {extra_css}
+{extra_css}
 </style>
 <rect x=".5" y=".5" width="959" height="{height-1}" rx="22" fill="url(#bg)" stroke="#30373b"/>
 {body}
