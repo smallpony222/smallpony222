@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="484" viewBox="0 0 960 484" role="img" aria-labelledby="title desc">
+<title id="title">Small Pony — engineering in motion</title><desc id="desc">From code to systems to intelligence. Software, systems, data, and applied AI.</desc>
+<defs>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#161d22"/><stop offset="1" stop-color="#0c1116"/></linearGradient>
+ <linearGradient id="gold"><stop stop-color="#88734e"/><stop offset=".5" stop-color="#eddbb4"/><stop offset="1" stop-color="#ad9059"/></linearGradient>
+ <radialGradient id="halo"><stop stop-color="#d9bd83" stop-opacity=".12"/><stop offset="1" stop-color="#d9bd83" stop-opacity="0"/></radialGradient>
+</defs>
+<style>
+ text{font-family:Inter,'Segoe UI',Arial,sans-serif}
+ .mono{font-family:'SFMono-Regular',Consolas,monospace;letter-spacing:2px}
+ .signal{stroke-dasharray:12 140;animation:signal 9s linear infinite}
+ .orbit{transform-box:fill-box;transform-origin:center;animation:orbit 40s linear infinite}
+ .breathe{animation:breathe 6s ease-in-out infinite}
+ .logo{animation:logo 7s ease-in-out infinite}
+ .draw{stroke-dasharray:10 16;animation:signal 18s linear infinite}
+ @keyframes signal{to{stroke-dashoffset:-304}}
+ @keyframes orbit{to{transform:rotate(360deg)}}
+ @keyframes breathe{0%,100%{opacity:.5}50%{opacity:1}}
+ @keyframes logo{0%,100%{opacity:.78;transform:translateY(0)}50%{opacity:1;transform:translateY(-1.5px)}}
+ @media(prefers-reduced-motion:reduce){*{animation:none!important}}
+ 
+</style>
+<rect x=".5" y=".5" width="959" height="483" rx="22" fill="url(#bg)" stroke="#30373b"/>
+<circle cx="757" cy="240" r="222" fill="url(#halo)"/><rect x="42" y="32" width="38" height="38" rx="11" fill="#d9bd83"/><text x="49" y="57" fill="#151a1e" font-size="17" font-weight="700" >SP</text><text x="95" y="57" fill="#f2eee5" font-size="16" font-weight="600" letter-spacing="3">SMALL PONY</text><text x="693" y="55" fill="#a5abae" font-size="12" font-weight="400" class="mono">ENGINEERING / 2026</text><path d="M42 90H918" stroke="#333a3e" /><text x="48" y="133" fill="#d9bd83" font-size="12" font-weight="400" class="mono">SOFTWARE · SYSTEMS · DATA · AI</text><text x="44" y="212" fill="#f2eee5" font-size="65" font-weight="600" letter-spacing="-3">From code.</text><text x="44" y="286" fill="#f2eee5" font-size="65" font-weight="600" letter-spacing="-3">To systems.</text><text x="44" y="360" fill="#d9bd83" font-size="65" font-weight="600" letter-spacing="-3">To intelligence.</text><g transform="translate(757 246)"><circle r="66" fill="none" stroke="#3a3d3a"/><circle r="105" fill="none" stroke="#3a3d3a"/><circle r="146" fill="none" stroke="#3a3d3a"/><g class="orbit"><circle r="146" fill="none" stroke="url(#gold)" stroke-width="2" stroke-dasharray="100 818"/><circle cy="-146" r="5" fill="#ead9b6"/></g><g class="orbit" style="animation-direction:reverse;animation-duration:28s"><circle r="105" fill="none" stroke="#8bd2c6" stroke-dasharray="25 635" stroke-width="2"/></g><path d="M-146 0H146M0-146V146" stroke="#283333"/><rect x="-47" y="-47" width="94" height="94" rx="26" fill="#1c2428" stroke="#8b7d61"/><path d="M-22 0l-12 0 12-13M22 0h12L22 13M9-18-9 18" fill="none" stroke="#eddbb4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="-8" cy="-146" r="4" fill="#8bd2c6" class="breathe"/><circle cx="146" cy="0" r="4" fill="#8bd2c6" class="breathe"/><circle cx="0" cy="146" r="4" fill="#8bd2c6" class="breathe"/></g><path d="M48 414H912" stroke="#333a3e" /><text x="48" y="452" fill="#a5abae" font-size="11" font-weight="400" letter-spacing="1.5">FULL-STACK ROOTS. SYSTEMS THINKING. APPLIED INTELLIGENCE.</text><circle cx="793" cy="448" r="4" fill="#8bd2c6" class="breathe"/><text x="807" y="452" fill="#8bd2c6" font-size="10" font-weight="400" letter-spacing="1.4">STILL BUILDING</text>
+</svg>
