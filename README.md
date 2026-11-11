@@ -1,12 +1,10 @@
 <picture>
-<source media="(max-width: 600px)" srcset="./assets/workflows/cover-mobile.svg" />
-<img src="./assets/workflows/cover.svg" width="100%" alt="Small Pony. Always building. Software, systems, data, and applied AI. Select any technology logo for its own conceptual workflow." />
+<source media="(max-width: 600px)" srcset="./assets/workflows/circle-mobile.svg" />
+<img src="./assets/workflows/circle.svg" width="100%" alt="Small Pony. An animated, clockwise circle connects five overlapping career chapters. Select a chapter using the controls below. Applied AI is open by default." />
 </picture>
 
-<picture>
-<source media="(max-width: 600px)" srcset="./assets/workflows/chapter-01-mobile.svg" />
-<img src="./assets/workflows/chapter-01.svg" width="100%" alt="BEFORE 2017 / The foundations." />
-</picture>
+<details name="engineering-chapter">
+<summary><picture><img src="./assets/workflows/stage-01.svg" width="24" height="24" alt="Software engineering" /></picture> &nbsp; <strong>BEFORE 2017</strong> / Software engineering</summary>
 
 <table width="100%" align="center">
 <tbody>
@@ -133,10 +131,10 @@
 </tbody>
 </table>
 
-<picture>
-<source media="(max-width: 600px)" srcset="./assets/workflows/chapter-02-mobile.svg" />
-<img src="./assets/workflows/chapter-02.svg" width="100%" alt="2017 - 2022 / Connected systems." />
-</picture>
+</details>
+
+<details name="engineering-chapter">
+<summary><picture><img src="./assets/workflows/stage-02.svg" width="24" height="24" alt="Full-stack engineering" /></picture> &nbsp; <strong>2017 - 2022</strong> / Full-stack engineering</summary>
 
 <table width="100%" align="center">
 <tbody>
@@ -309,10 +307,10 @@
 </tbody>
 </table>
 
-<picture>
-<source media="(max-width: 600px)" srcset="./assets/workflows/chapter-03-mobile.svg" />
-<img src="./assets/workflows/chapter-03.svg" width="100%" alt="2021 - 2024 / Built to keep running." />
-</picture>
+</details>
+
+<details name="engineering-chapter">
+<summary><picture><img src="./assets/workflows/stage-03.svg" width="24" height="24" alt="DevOps and cloud" /></picture> &nbsp; <strong>2021 - 2024</strong> / DevOps and cloud</summary>
 
 <table width="100%" align="center">
 <tbody>
@@ -469,10 +467,10 @@
 </tbody>
 </table>
 
-<picture>
-<source media="(max-width: 600px)" srcset="./assets/workflows/chapter-04-mobile.svg" />
-<img src="./assets/workflows/chapter-04.svg" width="100%" alt="2023 - 2025 / Data, in motion." />
-</picture>
+</details>
+
+<details name="engineering-chapter">
+<summary><picture><img src="./assets/workflows/stage-04.svg" width="24" height="24" alt="Data engineering" /></picture> &nbsp; <strong>2023 - 2025</strong> / Data engineering</summary>
 
 <table width="100%" align="center">
 <tbody>
@@ -615,10 +613,10 @@
 </tbody>
 </table>
 
-<picture>
-<source media="(max-width: 600px)" srcset="./assets/workflows/chapter-05-mobile.svg" />
-<img src="./assets/workflows/chapter-05.svg" width="100%" alt="2024 - 2026 / Intelligence, applied." />
-</picture>
+</details>
+
+<details name="engineering-chapter" open>
+<summary><picture><img src="./assets/workflows/stage-05.svg" width="24" height="24" alt="Applied AI and agents" /></picture> &nbsp; <strong>2024 - 2026</strong> / Applied AI and agents</summary>
 
 <table width="100%" align="center">
 <tbody>
@@ -790,3 +788,5 @@
 </tr>
 </tbody>
 </table>
+
+</details>

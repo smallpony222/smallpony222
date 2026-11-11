@@ -1,4 +1,4 @@
-﻿"""Build transparent GitHub artwork with one semantic reveal per technology."""
+"""Build transparent GitHub artwork with one semantic reveal per technology."""
 from pathlib import Path
 import html, json, math, textwrap
 import xml.etree.ElementTree as ET
@@ -178,44 +178,67 @@ def compact_effect(ch,name,label,color,spec):
 def picture(file,alt):
  return '<picture>\n<source media="(max-width: 600px)" srcset="./assets/workflows/'+file+'-mobile.svg" />\n<img src="./assets/workflows/'+file+'.svg" width="100%" alt="'+html.escape(alt,quote=True)+'" />\n</picture>'
 
-def cover(mobile):
- w=480 if mobile else 960;h=380 if mobile else 330
- b=txt(25,50,'SMALL PONY',20,INK,700,extra='letter-spacing="4"')
- b+=txt(22,127,'Always building.',48 if mobile else 72,INK,700,extra='letter-spacing="-2"')
- b+=txt(26,176,'Software. Systems. Data. Applied AI.',19 if mobile else 24,INK,600)
- cx,cy=(355,278) if mobile else (800,159)
- b+=f'<g transform="translate({cx} {cy})"><g class="orbit">'
- r=64 if mobile else 110
- for angle,c in [(0,BLUE),(60,balanced('#e56f40')),(120,INK)]:b+=f'<ellipse rx="{r}" ry="{r*.32}" transform="rotate({angle})" fill="none" stroke="{c}" stroke-width="2"/>'
- b+='</g></g>'
- b+=txt(26,h-36,'SELECT A LOGO TO EXPLORE ITS WORKFLOW',19,BLUE)
- save('cover-mobile.svg' if mobile else 'cover.svg',w,h,'Small Pony - engineering journey','Always building. Select individual technology logos for their conceptual workflows.',b)
 
-def chapter_art(ch,mobile):
- w=480 if mobile else 960;h=174 if mobile else 160
- c=balanced(ch['color'])
- b=f'<path d="M18 24V{h-24}" stroke="{c}" stroke-width="3"/>'
- b+=txt(40,47,ch['date'],18,c,700,extra='letter-spacing="2"')
- b+=txt(38,96,ch['title'],30 if mobile else 39,INK,700,extra='letter-spacing="-1"')
- b+=txt(w-37,47,ch['n'],22,c,600,extra='text-anchor="end"')
- subtitles={
- '01':'Software engineering / PHP / JavaScript',
- '02':'Full-stack / cloud architecture / microservices',
- '03':'DevOps / delivery / cloud operations',
- '04':'Data engineering / ETL / ELT',
- '05':'AI/ML / LLMs / agentic workflows'}
- for i,row in enumerate(textwrap.wrap(subtitles[ch['n']],41 if mobile else 80)):
-  b+=txt(40,130+i*23,row,18,INK)
- save(f'chapter-{ch["n"]}{"-mobile" if mobile else ""}.svg',w,h,ch['date']+' / '+ch['title'],subtitles[ch['n']],b)
+
+def circular_journey(mobile):
+ w=480 if mobile else 960;h=594 if mobile else 728
+ cx,cy=(240,288) if mobile else (480,348)
+ r=145 if mobile else 230
+ b=txt(24 if mobile else 38,35,'SMALL PONY / ENGINEERING JOURNEY',13 if mobile else 17,INK,700,extra='letter-spacing="2"')
+ b+=f'<g transform="translate({cx} {cy})">'
+ # Fine orbit lines give the ring depth without a solid light-theme background.
+ for radius in [r-35,r+24]:
+  b+=f'<circle r="{radius}" fill="none" stroke="{LINE}" stroke-width=".7" stroke-dasharray="1 7"/>'
+ for i,ch in enumerate(CHAPTERS):
+  color=balanced(ch['color']);start=math.radians(-76+i*72);end=math.radians(-32+i*72)
+  x,y=math.cos(start)*r,math.sin(start)*r;X,Y=math.cos(end)*r,math.sin(end)*r
+  arc=f'M{x:.3f} {y:.3f}A{r} {r} 0 0 1 {X:.3f} {Y:.3f}'
+  b+=f'<path d="{arc}" fill="none" stroke="{color}" stroke-width="{9 if mobile else 13}" stroke-linecap="round" opacity=".26"/>'
+  b+=f'<path d="{arc}" fill="none" stroke="{color}" stroke-width="{3 if mobile else 4}" stroke-linecap="round" class="flow" style="animation-duration:8s;animation-delay:-{i*1.6}s"/>'
+  # Arrow chevrons make the chronological direction explicit.
+  angle=end-.04;ax,ay=math.cos(angle)*r,math.sin(angle)*r
+  b+=f'<path d="M{ax-5} {ay-7}L{ax} {ay}L{ax+5} {ay-7}" transform="rotate({math.degrees(angle)} {ax} {ay})" fill="none" stroke="{color}" stroke-width="2"/>'
+ # A visible traveler follows the whole orbit; the bounds keep its center stable.
+ b+=f'<g class="orbit"><circle r="{r}" stroke="none" fill="none"/><circle cy="-{r}" r="{4 if mobile else 6}" fill="{BLUE}"/><circle cy="{r}" r="3" fill="{balanced("#df7755")}"/></g>'
+ inner=r-73
+ b+=f'<circle r="{inner}" fill="none" stroke="{LINE}" stroke-width=".7"/>'
+ b+=f'<circle r="{inner-8}" fill="none" stroke="{LINE}" stroke-width=".7" stroke-dasharray="1 9"/>'
+ b+=txt(0,-18,'ENGINEERING',12 if mobile else 20,INK,600,extra='text-anchor="middle" letter-spacing="3"')
+ b+=txt(0,16,'IN MOTION',22 if mobile else 35,INK,700,extra='text-anchor="middle" letter-spacing="1"')
+ b+=f'<path d="M-30 {32 if mobile else 42}H30" stroke="{BLUE}" stroke-width="2" class="flow"/>'
+ b+='</g>'
+ pairs=[('php','javascript'),('react','nodedotjs'),('docker','kubernetes'),('python','apachespark'),('openai','pytorch')]
+ roles=['SOFTWARE','FULL-STACK','DEVOPS','DATA','AI / AGENTS']
+ if mobile:
+  labels=[(240,69,'middle'),(454,187,'end'),(366,486,'middle'),(114,486,'middle'),(26,187,'start')]
+ else:
+  labels=[(480,51,'middle'),(792,260,'start'),(661,622,'middle'),(299,622,'middle'),(168,260,'end')]
+ for i,ch in enumerate(CHAPTERS):
+  a=math.radians(-90+i*72);x=cx+math.cos(a)*r;y=cy+math.sin(a)*r;color=balanced(ch['color'])
+  bw=70 if mobile else 98;bh=46 if mobile else 62
+  b+=f'<rect x="{x-bw/2}" y="{y-bh/2}" width="{bw}" height="{bh}" rx="{bh/2}" fill="none" stroke="{color}" stroke-width="1.5"/>'
+  # Arc gaps leave the technology marks clear without an opaque card surface.
+  size=22 if mobile else 30
+  for j,name in enumerate(pairs[i]):b+=icon(name,x-(size+5)+j*(size+10),y-size/2,size,color)
+  lx,ly,anchor=labels[i]
+  b+=txt(lx,ly,ch['date'],13 if mobile else 18,color,700,extra=f'text-anchor="{anchor}" letter-spacing="1"')
+  b+=txt(lx,ly+22 if mobile else ly+29,roles[i],13 if mobile else 19,INK,700,extra=f'text-anchor="{anchor}" letter-spacing="1.5"')
+ footer=550 if mobile else 694
+ b+=txt(w/2,footer,'FIVE CHAPTERS. ONE CONTINUOUS JOURNEY.',12 if mobile else 18,INK,600,extra='text-anchor="middle" letter-spacing="1"')
+ b+=txt(w/2,footer+25,'CHOOSE A CHAPTER BELOW',12 if mobile else 15,BLUE,600,extra='text-anchor="middle" letter-spacing="2"')
+ save('circle-mobile.svg' if mobile else 'circle.svg',w,h,'Small Pony - circular engineering journey','Clockwise journey: before 2017 software; 2017-2022 full-stack; 2021-2024 DevOps; 2023-2025 data engineering; 2024-2026 applied AI and agents. This animated circle is an overview; select a chapter in the controls below.',b)
+
 
 def build():
  OUT.mkdir(exist_ok=True)
- cover(False);cover(True)
- readme=picture('cover','Small Pony. Always building. Software, systems, data, and applied AI. Select any technology logo for its own conceptual workflow.')+'\n\n'
+ circular_journey(False);circular_journey(True)
+ readme=picture('circle','Small Pony. An animated, clockwise circle connects five overlapping career chapters. Select a chapter using the controls below. Applied AI is open by default.')+'\n\n'
  count=0
  for ch in CHAPTERS:
-  chapter_art(ch,False);chapter_art(ch,True)
-  readme+=picture('chapter-'+ch['n'],ch['date']+' / '+ch['title'])+'\n\n<table width="100%" align="center">\n<tbody>\n'
+  stage_labels={'01':'Software engineering','02':'Full-stack engineering','03':'DevOps and cloud','04':'Data engineering','05':'Applied AI and agents'}
+  lead=ch['logos'][0][0];color=balanced(ch['color'])
+  save('stage-'+ch['n']+'.svg',28,28,stage_labels[ch['n']],ch['date'],icon(lead,2,2,24,color))
+  readme+='<details name="engineering-chapter"'+(' open' if ch['n']=='05' else '')+'>\n<summary><picture><img src="./assets/workflows/stage-'+ch['n']+'.svg" width="24" height="24" alt="'+stage_labels[ch['n']]+'" /></picture> &nbsp; <strong>'+ch['date']+'</strong> / '+stage_labels[ch['n']]+'</summary>\n\n<table width="100%" align="center">\n<tbody>\n'
   tiles=[]
   for name,label,color in ch['logos']:
    spec=dict(WORKFLOWS[name]);spec['nodes']=list(spec['nodes'])
@@ -234,7 +257,7 @@ def build():
    row=tiles[i:i+2]
    if len(row)==1:row=[row[0].replace('<td width="50%"','<td colspan="2"').replace('width="100%"','width="50%"',1)]
    readme+='<tr>\n'+''.join(row)+'</tr>\n'
-  readme+='</tbody>\n</table>\n\n'
+  readme+='</tbody>\n</table>\n\n</details>\n\n'
  (ROOT/'README.md').write_text(readme.rstrip()+'\n',encoding='utf-8')
- print(f'Built {count} independent technology reveals; {len(WORKFLOWS)} distinct logos. Transparent, theme-neutral assets.')
+ print(f'Built circular overview, five exclusive chapter controls, and {count} technology reveals; {len(WORKFLOWS)} distinct logos.')
 if __name__=='__main__':build()
