@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" role="img" aria-labelledby="title desc">
+<title id="title">Ansible</title><desc id="desc">Ansible technology mark</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M1 1L7 4L1 7" fill="none" stroke="#828282" stroke-width="1.2"/></marker></defs>
+<style>
+text{font-family:Inter,'Segoe UI',Arial,sans-serif}
+.flow{stroke-dasharray:8 28;animation:flow 4s linear infinite}
+.stage{animation:stage 8s ease-in-out infinite}
+.orbit{transform-box:fill-box;transform-origin:center;animation:orbit 32s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-144}}
+@keyframes stage{0%,20%{stroke-width:3}40%,100%{stroke-width:1.2}}
+@keyframes orbit{to{transform:rotate(360deg)}}
+@keyframes grid{0%,100%{transform:scaleX(1)}50%{transform:scaleX(.58)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<g transform="translate(2 2) scale(1.3333333333333333)" fill="#76787d"><path d="M10.617 11.473l4.686 3.695-3.102-7.662zM12 0C5.371 0 0 5.371 0 12s5.371 12 12 12 12-5.371 12-12S18.629 0 12 0zm5.797 17.305c-.011.471-.403.842-.875.83-.236 0-.416-.09-.664-.293l-6.19-5-2.079 5.203H6.191L11.438 5.44c.124-.314.427-.52.764-.506.326-.014.63.189.742.506l4.774 11.494c.045.111.08.234.08.348-.001.009-.001.009-.001.023z"/></g>
+</svg>
