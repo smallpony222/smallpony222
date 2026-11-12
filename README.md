@@ -6,6 +6,14 @@
 <details name="engineering-chapter">
 <summary><picture><img src="./assets/workflows/stage-01.svg" width="24" height="24" alt="Software engineering" /></picture> &nbsp; <strong>BEFORE 2017</strong> / Software engineering</summary>
 
+<picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/constellation-01-mobile.svg" />
+<img src="./assets/workflows/constellation-01.svg" width="100%" alt="BEFORE 2017 / Software engineering. Technology logos arranged as satellites around the chapter star." />
+</picture>
+
+<details>
+<summary><strong>Explore 8 technology workflows</strong></summary>
+
 <table width="100%" align="center">
 <tbody>
 <tr>
@@ -132,9 +140,18 @@
 </table>
 
 </details>
+</details>
 
 <details name="engineering-chapter">
 <summary><picture><img src="./assets/workflows/stage-02.svg" width="24" height="24" alt="Full-stack engineering" /></picture> &nbsp; <strong>2017 - 2022</strong> / Full-stack engineering</summary>
+
+<picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/constellation-02-mobile.svg" />
+<img src="./assets/workflows/constellation-02.svg" width="100%" alt="2017 - 2022 / Full-stack engineering. Technology logos arranged as satellites around the chapter star." />
+</picture>
+
+<details>
+<summary><strong>Explore 11 technology workflows</strong></summary>
 
 <table width="100%" align="center">
 <tbody>
@@ -308,9 +325,18 @@
 </table>
 
 </details>
+</details>
 
 <details name="engineering-chapter">
 <summary><picture><img src="./assets/workflows/stage-03.svg" width="24" height="24" alt="DevOps and cloud" /></picture> &nbsp; <strong>2021 - 2024</strong> / DevOps and cloud</summary>
+
+<picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/constellation-03-mobile.svg" />
+<img src="./assets/workflows/constellation-03.svg" width="100%" alt="2021 - 2024 / DevOps and cloud. Technology logos arranged as satellites around the chapter star." />
+</picture>
+
+<details>
+<summary><strong>Explore 10 technology workflows</strong></summary>
 
 <table width="100%" align="center">
 <tbody>
@@ -468,9 +494,18 @@
 </table>
 
 </details>
+</details>
 
 <details name="engineering-chapter">
 <summary><picture><img src="./assets/workflows/stage-04.svg" width="24" height="24" alt="Data engineering" /></picture> &nbsp; <strong>2023 - 2025</strong> / Data engineering</summary>
+
+<picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/constellation-04-mobile.svg" />
+<img src="./assets/workflows/constellation-04.svg" width="100%" alt="2023 - 2025 / Data engineering. Technology logos arranged as satellites around the chapter star." />
+</picture>
+
+<details>
+<summary><strong>Explore 9 technology workflows</strong></summary>
 
 <table width="100%" align="center">
 <tbody>
@@ -614,9 +649,18 @@
 </table>
 
 </details>
+</details>
 
 <details name="engineering-chapter" open>
 <summary><picture><img src="./assets/workflows/stage-05.svg" width="24" height="24" alt="Applied AI and agents" /></picture> &nbsp; <strong>2024 - 2026</strong> / Applied AI and agents</summary>
+
+<picture>
+<source media="(max-width: 600px)" srcset="./assets/workflows/constellation-05-mobile.svg" />
+<img src="./assets/workflows/constellation-05.svg" width="100%" alt="2024 - 2026 / Applied AI and agents. Technology logos arranged as satellites around the chapter star." />
+</picture>
+
+<details>
+<summary><strong>Explore 11 technology workflows</strong></summary>
 
 <table width="100%" align="center">
 <tbody>
@@ -789,4 +833,5 @@
 </tbody>
 </table>
 
+</details>
 </details>
